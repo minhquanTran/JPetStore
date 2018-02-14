@@ -22,7 +22,7 @@ public class PetStoreTest {
 		FirefoxOptions opts = new FirefoxOptions().setProfile(new FirefoxProfile());
 		opts.addPreference("browser.tabs.remote.autostart", false);
 		
-		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium Drivers\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium_Drivers\\geckodriver.exe");
 		driver = new FirefoxDriver(opts);
 		driver.get("http://localhost:8180/jpetstore");
 	}
