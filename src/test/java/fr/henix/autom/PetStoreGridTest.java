@@ -29,7 +29,7 @@ public class PetStoreGridTest {
 		
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		
-		driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444/wd/hub"), cap);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 		
 //		FirefoxOptions opts = new FirefoxOptions().setProfile(new FirefoxProfile());
 //		opts.addPreference("browser.tabs.remote.autostart", false);
