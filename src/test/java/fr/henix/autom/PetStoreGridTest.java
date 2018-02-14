@@ -28,7 +28,7 @@ public class PetStoreGridTest {
 		cap.setBrowserName("firefox");
 		
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
-		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium Drivers\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium_Drivers\\geckodriver.exe");
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 		
 //		FirefoxOptions opts = new FirefoxOptions().setProfile(new FirefoxProfile());
