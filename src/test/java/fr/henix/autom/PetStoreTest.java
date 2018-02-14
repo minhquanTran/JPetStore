@@ -17,7 +17,7 @@ public class PetStoreTest {
 	
 	@Before
 	public void setUp() {
-		System.out.println("here : " + System.getProperty("browser"));
+		System.out.println("here and there : " + System.getProperty("browser"));
 		
 		FirefoxOptions opts = new FirefoxOptions().setProfile(new FirefoxProfile());
 		opts.addPreference("browser.tabs.remote.autostart", false);
