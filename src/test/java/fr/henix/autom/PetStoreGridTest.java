@@ -25,17 +25,19 @@ public class PetStoreGridTest {
 //		String browserName = System.getProperty("browser").toLowerCase();
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setBrowserName("firefox");
+		cap.setBrowserName("chrome");
 		
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium_Drivers\\geckodriver.exe");
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+		
 		
 //		FirefoxOptions opts = new FirefoxOptions().setProfile(new FirefoxProfile());
 //		opts.addPreference("browser.tabs.remote.autostart", false);
-//		
-//		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium Drivers\\geckodriver.exe");
 //		driver = new FirefoxDriver(opts);
+		
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium Drivers\\chromedriver.exe");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 		driver.get("http://localhost:8180/jpetstore");
 	}
 	
