@@ -24,10 +24,10 @@ public class PetStoreTest {
 //		
 //		System.setProperty("webdriver.gecko.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium_Drivers\\geckodriver.exe");
 //		driver = new FirefoxDriver(opts);
-//		driver.get("http://localhost:8180/jpetstore");
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\new_data_QUAN\\HENIX\\SQUASH_TA_FORMATION\\Formation\\Selenium_Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.get("http://localhost:8180/jpetstore");
 	}
 	
 	@Test
